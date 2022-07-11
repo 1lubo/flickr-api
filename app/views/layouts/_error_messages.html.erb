@@ -1,0 +1,17 @@
+<% if flash && !flash.empty? %>
+ <% flash.each do |key, message| %>
+ <% if message.class == Array%>
+  <% message.each do |m| %>
+      <div class="notification is-<%= key %>">
+        <button class="delete"></button>
+        <%= m %>
+      </div>
+  <% end %>
+  <%else %>
+    <div class="notification is-<%= key %>">        
+        <button class="delete"></button>
+        <%= message %>              
+      </div>
+      <% end %>
+ <% end %>  
+<% end %>

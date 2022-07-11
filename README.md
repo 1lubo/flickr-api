@@ -1,24 +1,5 @@
-# README
+# Flickr API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple app which will search Flickr by a username or user ID and display the first page of results of their public photos.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This was created as part of the [Odin curriculum](https://www.theodinproject.com/lessons/ruby-on-rails-flickr-api)

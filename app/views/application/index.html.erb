@@ -1,0 +1,10 @@
+<h1>FLICKR SEARCH</h1>
+<%= render "search_form" %>
+<% if !@pictures.nil? && @pictures.class != String && @pictures.size > 0%>
+    <div><h3>Displaying Results</h3></div>
+    
+    <% @pictures.each do |picture| %>
+        <div class=""><img src="https://live.staticflickr.com/<%= picture['server']%>/<%= picture['id']%>_<%= picture['secret']%>.jpg" alt=""></div>
+        <span><%= picture['title']%></span>
+    <% end %>
+<% end %>

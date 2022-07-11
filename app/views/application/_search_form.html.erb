@@ -1,0 +1,6 @@
+<div class="">    
+    <%= form_tag(search_path, method: :get, local: true) do %>
+        <%= text_field_tag(:userid, nil, placeholder: 'Enter User ID') %>
+        <%= submit_tag("Search", name: nil)%>
+    <% end %>
+</div>
